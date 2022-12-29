@@ -7,7 +7,19 @@ var config = {
 var env = karate.env
 karate.log('The value of env is ', env);
 
-karate.configure('connectTimeout', 50)
-karate.configure('readTimeout', 50)
+if(env == 'QA'){
+    config.baseURL = 'https://reqres.in/api/qa'
+}
+else if (env == 'UAT'){
+    config.baseURL = 'https://reqres.in/api/uat'
+}
+else {
+    config.baseURL = 'https://reqres.in/api'
+}
+
+
+
+///karate.configure('connectTimeout', 50)
+//karate.configure('readTimeout', 50)
 return config
     }

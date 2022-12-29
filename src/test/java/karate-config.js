@@ -14,12 +14,12 @@ else if (env == 'UAT'){
     config.baseURL = 'https://reqres.in/api/uat'
 }
 else {
-    config.baseURL = 'https://reqres.in/api/default'
+    config.baseURL = 'https://reqres.in/api'
 }
 
 
 
-karate.configure('connectTimeout', 50)
-karate.configure('readTimeout', 50)
+///karate.configure('connectTimeout', 50)
+//karate.configure('readTimeout', 50)
 return config
     }
