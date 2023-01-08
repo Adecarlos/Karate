@@ -5,7 +5,7 @@ Feature: Sample API Tests
     When method GET
     Then status 200
 
-  Scenario: Test a Sample Get API 500
+  Scenario: Test a Sample Get API 500 (this test will fail)
     Given url 'https://reqres.in/api/users?page=2'
     When method GET
     Then status 500

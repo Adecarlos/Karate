@@ -52,7 +52,7 @@ Feature: Post API Demo
     And print response
 
   # Post changing parameters
-  Scenario: Post Demo 6
+  Scenario: Post Demo 6 (this test will fail because I changed the requestBody)
     Given path '/users'
     And request requestBody
     And set requestBody.job = 'Maconheiro'

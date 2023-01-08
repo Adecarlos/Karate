@@ -1,17 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: tests.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 14.139 sec <<< FAILURE!
-[2:8] Test a Sample Get API 500([tests/FirstTest] Sample API Tests)  Time elapsed: 0.237 sec  <<< ERROR!
-com.intuit.karate.KarateException: status code was: 200, expected: 500, response time in milliseconds: 178, url: https://reqres.in/api/users?page=2, response: 
+Tests run: 16, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 17.581 sec <<< FAILURE!
+[2:8] Test a Sample Get API 500 (this test will fail)([tests/FirstTest] Sample API Tests)  Time elapsed: 0.151 sec  <<< ERROR!
+com.intuit.karate.KarateException: status code was: 200, expected: 500, response time in milliseconds: 119, url: https://reqres.in/api/users?page=2, response: 
 {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
 classpath:tests/FirstTest.feature:11
 	at <feature>.: Then status 500 (classpath:tests/FirstTest.feature:11:11)
 
-[6:55] Post Demo 6([tests/Post] Post API Demo)  Time elapsed: 0.613 sec  <<< ERROR!
+[6:55] Post Demo 6([tests/Post] Post API Demo)  Time elapsed: 0.567 sec  <<< ERROR!
 com.intuit.karate.KarateException: match failed: EQUALS
   $ | not equal | match failed for name: 'job' (MAP:MAP)
-  {"createdAt":"2023-01-08T23:26:59.050Z","name":"Adecarlos","id":"807","job":"Maconheiro"}
+  {"createdAt":"2023-01-08T23:34:30.900Z","name":"Adecarlos","id":"916","job":"Maconheiro"}
   {"createdAt":"#ignore","name":"Adecarlos","id":"#string","job":"Student"}
 
     $.job | not equal (STRING:STRING)
