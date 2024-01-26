@@ -18,7 +18,7 @@ else {
 }
 
 
-
+karate.configure('ssl', true);
 ///karate.configure('connectTimeout', 50)
 //karate.configure('readTimeout', 50)
 return config

@@ -52,10 +52,10 @@ Feature: Post API Demo
     And print response
 
   # Post changing parameters
-  Scenario: Post Demo 6 (this test will fail because I changed the requestBody)
+  Scenario: Post Demo 6
     Given path '/users'
     And request requestBody
-    And set requestBody.job = 'Maconheiro'
+    And set requestBody.job = 'Student'
     When method POST
     Then status 201
     And match response == expectedOutput

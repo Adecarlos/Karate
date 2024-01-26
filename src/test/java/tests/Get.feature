@@ -1,9 +1,23 @@
 Feature: Get API Demo
 
   Background: 
-    * url 'https://reqres.in/api'
+    * url baseURL
     * header Accept = 'application/json'
 
+
+# Simple Get Request
+  Scenario: adicionando o que da certo
+    Given path '/users'
+    When method GET
+    Then status 200
+    And print response
+    
+  Scenario: adicionando o que da certo dois
+    Given path '/users'
+    When method GET
+    Then status 200
+    And print response
+    
   # Simple Get Request
   Scenario: Get Demo 1
     Given path '/users?page=2'
